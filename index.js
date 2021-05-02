@@ -1,16 +1,14 @@
 const express = require('express');
 const Pusher = require("pusher");
 const path = require('path');
+const keys = require('./config/keys');
 const app = express();
+
 app.use(express.json());
 
-const pusher = new Pusher({
-  appId: "1194443",
-  key: "70b0637b41f78ffb8d23",
-  secret: "965a57181c668bee097e",
-  cluster: "ap2",
-  useTLS: true
-});
+const pusher = new Pusher(
+  keys.pusherCreds
+);
 
 app.use(express.static('public'));
 
@@ -24,8 +22,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
-app.listen(5002, (err) => {
+app.listen(keys.port, (err) => {
   if(!err){
-    console.log("listening on 5002");
+    console.log(`listening on ${keys.port}`);
   }
 });

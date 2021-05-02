@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/home/amor/Desktop/projects/React/beams_test/server/node_modules/node/bin/node',
+1 verbose cli   '/home/amor/Desktop/projects/React/beams_test/server/node_modules/.bin/npm',
+1 verbose cli   'install'
+1 verbose cli ]
+2 info using npm@3.10.10
+3 info using node@v16.0.0
+4 warn invalid config loglevel="notice"
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 verbose stack TypeError: cb.apply is not a function
+8 verbose stack     at /home/amor/Desktop/projects/React/beams_test/server/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
+8 verbose stack     at FSReqCallback.oncomplete (node:fs:195:5)
+9 verbose cwd /home/amor/Desktop/projects/React/beams_test/server
+10 error Linux 5.4.0-26-generic
+11 error argv "/home/amor/Desktop/projects/React/beams_test/server/node_modules/node/bin/node" "/home/amor/Desktop/projects/React/beams_test/server/node_modules/.bin/npm" "install"
+12 error node v16.0.0
+13 error npm  v3.10.10
+14 error cb.apply is not a function
+15 error If you need help, you may report this error at:
+15 error     <https://github.com/npm/npm/issues>
+16 verbose exit [ 1, true ]
